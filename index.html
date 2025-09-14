@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Order summary card</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(209, 222, 255);
+        margin-top: 70px;
+      }
+      .container {
+        height: 550px;
+        width: 380px;
+        border-radius: 10px;
+        background-color: white;
+        text-align: center;
+      }
+      .photo {
+        width: 380px;
+        border-radius: 10px 10px 0px 0px;
+      }
+      .text {
+        line-height: 20px;
+        color: gray;
+      }
+      .order {
+        font-family: serif;
+      }
+      .annual {
+        width: 300px;
+        height: 80px;
+        border-radius: 15px;
+        border: none;
+        background-color: rgb(237, 239, 250);
+        font-size: 15px;
+        margin-left: 40px;
+        display: flex;
+        flex-direction: column;
+      }
+      .second {
+        margin-left: -50px;
+        margin-top: 20px;
+        line-height: 22px;
+      }
+      .icon {
+        margin-left: -150px;
+      }
+      .third {
+        margin-top: -50px;
+      }
+      .change {
+        margin-top: -30px;
+        margin-left: 200px;
+        color: blue;
+        border-bottom: blue;
+      }
+      .proc {
+        margin-bottom: -300px;
+        margin-top: 20px;
+      }
+      button {
+        background-color: blue;
+        width: 300px;
+        height: 40px;
+        color: white;
+        border-radius: 10px;
+        border: none;
+      }
+      .cancel {
+        margin-top: 340px;
+        color: gray;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img class="photo" src="images/illustration-hero.svg" alt="photo" />
+      <h2 class="order">Order Summary</h2>
+      <p class="text">
+        You can now listen to millions of songs, <br />
+        audiobooks, and podcasts on any device <br />anywhere you like!
+      </p>
+      <div class="annual">
+        <div class="second">
+          <img class="icon" src="images/icon-music.svg" />
+          <div class="third"><b>Annual Plan </b> <br />$59.99/year</div>
+          <h6 class="change">Change</h6>
+        </div>
+      </div>
+      <div class="proc">
+        <button>Proceed to Payment</button>
+      </div>
+      <p class="cancel">Cancel Order</p>
+    </div>
+  </body>
+</html>
